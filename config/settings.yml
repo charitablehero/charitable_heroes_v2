@@ -12,7 +12,7 @@ project_goal: 100000
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
 # This'll be both the page title (<title></title>) and the name in the header
-product_name: "Charitable Heroes"
+product_name: "Chartiable Heroes"
 
 # This will be used in sentences like Hooray You've just reserved product_description
 product_description: "a set of widgets"
@@ -22,7 +22,7 @@ product_description: "a set of widgets"
 product_image_path: "my-product-image.png"
 
 # The message on the preorder page, Lockitron's is ""
-value_proposition: "Support Charitable Heroes"
+value_proposition: "Charitable Heroes"
 
 # YouTube or Vimeo Video URL (The embed URL, without the query string options)
 # Replace /embed/ in your video url path with /v/ for video playback to work.
@@ -63,7 +63,7 @@ primary_stat: "backers"
 primary_stat_verb: 'backer'
 
 # The 2nd call to action button, towards the middle-ish of the page
-middle_reserve_text: "Reserve Now"
+middle_reserve_text: "Become a Hero!"
 
 # When the project should end
 expiration_date: <%= DateTime.now + 29 %>
@@ -74,10 +74,10 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Ships...sometime"
+ships: "Help Support Our Cause"
 
 # On Lockitron, it's "Reserve Now"
-call_to_action: "Reserve Now"
+call_to_action: "Become a Hero!"
 # On Lockitron, this is "Only $149 for a limited time"
 price_human: "It costs money!"
 

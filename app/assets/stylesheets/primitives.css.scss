@@ -166,6 +166,11 @@ h5 {
   border-bottom: 1px solid $gray_background_border_color;
 }
 
+.top-section {
+  background-image: url('hero-image.jpg');
+  background-position: -100px -250px;
+}
+
 .button:hover {
   text-decoration: none;
   color: $button_hovered_color;
@@ -177,16 +182,16 @@ h5 {
 }
 
 body.lt-ie9 {
-  .blue_button {
+  .red_button {
     background-color: #0D97E6 !important;
     background-image: none !important;
   }
-  .blue_button:hover {
+  .red_button:hover {
     background-color: #add8e6 !important;
   }
 }
 
-.blue_button {
+.red_button {
   display: block;
   color: $button_color; /* text color */
   text-shadow: 0 -1px 1px $button-text_shadow_color; /* drop shadow */
@@ -206,7 +211,7 @@ body.lt-ie9 {
   border-radius: $button_border_radius;
   font-family: $primary_font, $secondary_font, $tertiary_font;
 }
-.blue_button:hover {
+.red_button:hover {
   -moz-box-shadow:
     0 1px 1px $button_box_shadow_color /* drop shadow */,
     inset 0 -1px 1px $button_box_shadow_inset_color /* inner shadow */;
@@ -224,7 +229,7 @@ body.lt-ie9 {
   text-decoration: none;  
 }
 
-.blue_button:active {
+.red_button:active {
   -moz-box-shadow:
     0 1px 1px $button_box_shadow_color /* drop shadow */,
     inset 0 3px 5px $button_box_shadow_inset_color /* inner shadow */;
