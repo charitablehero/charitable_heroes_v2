@@ -1,3 +1,6 @@
+//Import Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);    //h1 title font
+
 
 /* For modern browsers */
 .clearfix:before,
@@ -103,13 +106,14 @@ details summary::-webkit-details-marker { display:none; content: ""; }
 
 h1 {
   margin: 0 auto;
-  margin-left: 380px;
-  width: 174px;
-  font-family: Helvetica;
-  font-size: 42px;
+  margin-left: 260px;//380px;
+  margin-bottom: 35px;
+  //width: 174px;
+  font-family: 'Pathway Gothic One', sans-serif;//font-family: Helvetica;
+  font-size: 60px;//42px;
   font-weight: bold;
   color: $h1_color;
-  letter-spacing: -.05em;
+  //letter-spacing: -.05em;
   float: left;
   a
   {
