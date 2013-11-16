@@ -1,0 +1,13 @@
+"gcc -o conftest -I/Users/kevintrehan/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/x86_64-darwin12.4.0 -I/Users/kevintrehan/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/Users/kevintrehan/.rbenv/versions/1.9.3-p392/include/ruby-1.9.1 -I. -I'/Users/kevintrehan/.rbenv/versions/1.9.3-p392/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/kevintrehan/.rbenv/versions/1.9.3-p392/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/kevintrehan/.rbenv/versions/1.9.3-p392/lib -L. -L'/Users/kevintrehan/.rbenv/versions/1.9.3-p392/lib'      -lruby-static  -lpthread -ldl -lobjc "
+
+
+Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.
+
+
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
