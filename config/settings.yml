@@ -7,7 +7,7 @@
 
 # Set your project goal here - dollar amount
 # NOTE: if you manually want to adjust your progress to test the site, head over to the Order model (app/models/order.rb)
-project_goal: 100000
+project_goal: 5000
 
 # If you want to edit the FAQ, head over to app/views/preorder/homepage/_faqs.html.erb
 
@@ -58,9 +58,9 @@ charge_limit: 35.00
 # Stats settings
 
 # On Lockitron, it's "backers"
-primary_stat: "backers"
-# This'll show up in the tweet as, "I'm backer number ..."
-primary_stat_verb: 'backer'
+primary_stat: "heroes"
+# This'll show up in the tweet as, "I'm hero number ..."
+primary_stat_verb: 'hero'
 
 # The 2nd call to action button, towards the middle-ish of the page
 middle_reserve_text: "Become a Hero!"
@@ -74,15 +74,15 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Win Charitable Superpowers"
+ships: "$29.95 to Enter"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Become a Hero!"
 # On Lockitron, this is "Only $149 for a limited time"
-price_human: "It costs money!"
+price_human: ""
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
-dont_give_them_a_reason_to_say_no: "You'll get this exact site. All you'll need to get started is a great product."
+dont_give_them_a_reason_to_say_no: "The World's only competition to award life-long Charitable Superpowers!"
 
 # Social Stuff
 facebook_app_id: "1234567890"
