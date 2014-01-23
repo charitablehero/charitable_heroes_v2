@@ -13,19 +13,16 @@
         <% end %>
 
       </p>
-      <%= form_tag "/preorder/prefill", :id => "checkout" do %>
-        <%= render 'preorder/payment_options' %>
-        <div class="checkout_controls">
-          <div class="checkout_controls_wrapper">
-            <div class="checkout_controls_inner">
-              <%= email_field_tag "email", nil, :placeholder => "Email address", :required => "required", :id => "email" %>
-              <%= hidden_field_tag "preorder", true %>
-              <%= hidden_field_tag "quantity", params[:quantity] %>
-              <%= submit_tag "Checkout", :class => "red_button disabled", :id => "amazon_button" %>
-            </div>
-          </div>
-        </div>
-      <% end %>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="P5PGQKFRR7B3L">
+        <table>
+          <tr><td><input type="hidden" name="on0" value="One (1) Competition Registrati">One (1) Competition Registrati</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+        </table>
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
     </div>
     <%= render 'preorder/checkout/sidebar' %>
   </div>
