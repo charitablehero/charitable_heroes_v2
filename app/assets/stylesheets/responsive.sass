@@ -1,0 +1,80 @@
+html.responsive
+  h1
+    margin: 0
+    float: none
+    display: block
+    font-family: $league
+    font-size: 50px
+    @extend %smooth
+    @extend %text-shadow
+    +media($small)
+      font-size: 60px
+
+  #one
+    width: 100%
+    height: auto
+
+  .wrapper
+    +clearfix
+    width: 100%
+    max-width: 935px
+
+  .top-section
+    background-position: center center
+    background-size: cover
+    padding: 40px 10px
+    height: auto
+    +transition(padding, 0.15s)
+    h1
+      text-align: center
+    +media($small)
+      padding: 50px 20px
+
+  #backing
+    width: 100%
+    max-width: 480px
+    margin: 30px 0 0 0
+    @extend %smooth
+    ul
+      padding: 0 10px
+      max-width: 380px
+      margin: 0 auto 20px
+      text-align: left
+      +clearfix
+      li
+        float: left
+        width: 30%
+        font-size: 16px
+        padding: 0
+        margin-left: 5%
+        &:first-of-type
+          margin-left: 0
+        span
+          font-size: 16px
+      +media($small)
+        width: 100%
+        margin: 20px 0
+        li
+          font-size: 24px
+          span
+            font-size: 20px
+    #progress_bg
+      @extend %box-shadow
+      float: none
+      width: 100%
+      max-width: 380px
+      margin: 0 auto
+      +media($small)
+        margin: 0 0 20px 0
+
+  #reserve_container
+    float: none
+    max-width: 380px
+    margin: 40px auto 0
+    .red_button
+      background-image: none
+      +button($red)
+    +media($small)
+      margin: 0
+
+

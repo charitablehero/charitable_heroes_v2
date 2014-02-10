@@ -1,0 +1,53 @@
+// Breakpoints
+$small: 480px
+
+// Colors
+$darkblue: #13202C
+$blue: #2C3E50
+$lightblue: #2980B9
+$lightgrey: #ECF0F1
+$grey: #bdc3c7
+$red: #db212e
+
+// Fonts
++font-face( "league-gothic", "LeagueGothic/leaguegothic-regular-webfont")
+$league: "league-gothic", $helvetica
+
+// Placeholders
+%equidistant
+  text-align: justify
+  & > *
+    display: inline-block
+    vertical-align: top
+  &:after
+    content: ""
+    width: 100%
+    +inline-block
+
+%smooth
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+%text-shadow
+  text-shadow: 1px 1px 2px $darkblue
+
+%box-shadow
+  box-shadow: 1px 1px 3px -1px $darkblue
+
+// Mixins
+=button($bg, $color: #fff)
+  @extend %box-shadow
+  @extend %smooth
+  border-radius: 5px
+  text-shadow: 1px 1px 1px $darkblue
+  padding: 10px 25px 10px 20px // Because Italic
+  color: $color
+  background-color: $bg
+  font-size: 30px
+  font-style: italic
+  font-family: $league
+  text-decoration: none
+  text-transform: uppercase
+  +transition(background-color, 0.3s)
+  &:hover
+    background-color: darken($bg, 5%)

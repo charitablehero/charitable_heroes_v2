@@ -28,6 +28,10 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'shoulda'
+  gem 'pry'
+  gem 'pry-debugger'
+  gem 'better_errors'
+  gem 'quiet_assets'
 end
 
 # jQuery
