@@ -5,10 +5,11 @@ html.responsive
     display: block
     font-family: $league
     font-size: 50px
+    text-shadow: 1px 1px 2px $darkblue
     @extend %smooth
-    @extend %text-shadow
     +media($small)
       font-size: 60px
+      text-shadow: 2px 2px 5px $darkblue
 
   #one
     width: 100%
@@ -35,6 +36,7 @@ html.responsive
     max-width: 480px
     margin: 30px 0 0 0
     @extend %smooth
+    @extend %text-shadow
     ul
       padding: 0 10px
       max-width: 380px
@@ -71,10 +73,11 @@ html.responsive
     float: none
     max-width: 380px
     margin: 40px auto 0
-    .red_button
-      background-image: none
-      +button($red)
     +media($small)
       margin: 0
+
+  .red_button
+    background-image: none
+    +button($red)
 
 
