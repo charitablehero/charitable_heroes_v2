@@ -1,5 +1,5 @@
 <div class="wrapper clearfix">
-  <% backers = 1000 %>
+  <% backers = 0 %>
   <% percent = (backers * 19.95 / Order.goal) * 100 %>
   <div id="backing">
     <ul>
@@ -37,16 +37,13 @@
     <% end %>
 
     <div id="reserve_container">
+      <div class="disclaimer">
+        <p><small>Progress is updated daily but might not yet reflect the current status</small></p>
+      </div>
       <p id="ship_date"><%= Settings.ships %></p>
       <a href="/preorder/checkout" class="red_button reserve"><%= Settings.call_to_action %></a>
       <p id="price"><%= Settings.price_human %></p>
       <p><%= Settings.dont_give_them_a_reason_to_say_no %></p>
-      <%= like_button %>
-
-      <div>
-        <a class="social-twitter" href="http://www.twitter.com"></a>
-      </div>
-
     </div>
 
   </div>

@@ -1,4 +1,6 @@
 html.responsive
+  body
+    text-shadow: none
   h1
     margin: 0
     float: none
@@ -11,26 +13,78 @@ html.responsive
       font-size: 60px
       text-shadow: 2px 2px 5px $darkblue
 
-  #one
-    width: 100%
-    height: auto
+  h3
+    font-size: 30px
+    margin-top: 0
+    font-family: $helvetica
+    font-weight: bold
+    +media($medium)
+      font-size: 40px
+
+  h4
+    font-size: 24px
+    margin: 0 0 10px
+    font-family: $helvetica
+    font-weight: bold
+    font-style: italic
+    color: #525252
+    +transition(color, 0.3s)
+    +media($medium)
+      font-size: 40px
+      font-style: normal
+      margin: 0 0 30px
+      color: #292929
+
+  small
+    font-size: 12px
+
+  a
+    +transition(color, 0.3s)
 
   .wrapper
     +clearfix
     width: 100%
     max-width: 935px
 
+  .red_button
+    background-image: none
+    +button($red)
+
+  .tweet-button, .facebook-button
+    background-image: none
+
+  .tweet-button
+    +button(#55acee)
+
+  .facebook-button
+    +button(#3b5998)
+
+  .social-group
+    height: 56px
+    +inline-block
+    a.tweet-button, a.facebook-button
+      +inline-block
+      float: none
+      text-align: center
+      padding: 0
+      +size(56px)
+      line-height: 56px
+
   .top-section
     background-position: center center
     background-size: cover
-    padding: 40px 10px
+    padding: 40px 10px 90px
     height: auto
+    position: relative
     +transition(padding, 0.15s)
     h1
       text-align: center
     +media($small)
+      padding: 50px 20px 80px
+    +media($medium)
       padding: 50px 20px
-
+    .social-group
+      +position(absolute, 0 15px 10px 0)
   #backing
     width: 100%
     max-width: 480px
@@ -73,11 +127,159 @@ html.responsive
     float: none
     max-width: 380px
     margin: 40px auto 0
+    padding-top: 0
+    .disclaimer
+      color: white
+      font-style: italic
+      padding: 2px 0 10px
+      p
+        line-height: 1
     +media($small)
       margin: 0
 
-  .red_button
-    background-image: none
-    +button($red)
+  .point_copy
+    width: auto
+    font-size: 16px
+    p
+      max-width: 420px
+    &.right
+      margin: 0
+    +media($small)
+      font-size: 18px
+    +media($large)
+      font-size: 20px
+      width: 46%
+      &.right
+        float: right
+      p
+        max-width: 460px
+
+  .big_wrapper, .gray_background:not(.top-section)
+    padding: 0 10px
+    box-shadow: inset 0 -10px 15px -5px #f0f0f0
+    .wrapper
+      padding: 35px 0 50px
+    +media($medium)
+      min-height: 400px
+
+  #one, #two
+    width: 100%
+    height: auto
+    background: none
+
+  #other_points
+    h4, li
+      float: none
+      width: 100%
+      text-align: left
+
+    & > li
+      margin: 0
+      padding: 10px 0 20px
+      +media($medium)
+        float: left
+        width: 46%
+        clear: right
+        padding: 20px 0 40px
+        &:nth-child(2n)
+          float: right
+          clear: none
+
+    ul
+      padding-left: 20px
+      li
+        float: none
+        list-style: disc
+        margin: 0 0 4px 0
+        padding: 0
+        font-size: 16px
+        line-height: 1.2
+        +media($medium)
+          font-size: 18px
+        +media($large)
+          font-size: 20px
+          margin: 0 0 8px 0
+  #faqs
+    h4
+      margin: 0 0 30px 0
+    h5
+      margin-top: 10px
+    ul
+      width: 100%
+      margin: 0
+      li
+        width: auto
+        margin: 0 0 10px 0
+        clear: both
+        p
+          font-size: 16px
+        ul
+          list-style: disc
+          padding: 5px 0 5px 20px
+        li
+          font-size: 16px
+          line-height: 1.25
+          padding: 0
+        ul, li
+          background: none
+    +media($medium)
+      div > ul
+        float: left
+        width: 46%
+        &.col2
+          float: right
+
+  #middle_reserve
+    padding-left: 0
+    padding-right: 0
+    h2
+      font-size: 35px
+      font-weight: bold
+      +media($medium)
+        font-size: 45px
+        margin: 30px 0 20px
+    .red_button
+      margin-bottom: 10px
+    .social-group
+      width: 100%
+
+  .footer
+    text-align: center
+    padding-bottom: 15px
+    +clearfix
+    .footer
+      padding: 0
+    .social-group
+      float: right
+      height: auto
+      padding: 30px 20px 10px
+      a
+        margin-left: 10px
+        font-size: 20px
+        color: #6b6b6b
+        &:hover
+          color: darken($grey, 50%)
+    ul
+      float: none
+      width: 100%
+      li
+        +inline-block
+        color: $grey
+        &:not(:first-of-type):before
+          content: "\007C"
+          margin: 0 10px
+        a
+          font-size: 14px
+          color: lighten($darkblue, 20%)
+          &:hover
+            color: $darkblue
+            text-decoration: none
+    p
+      font-size: 14px
+      padding-top: 10px
+    +media($medium)
+      ul li, ul li a, p
+        font-size: 16px
+
 
 
