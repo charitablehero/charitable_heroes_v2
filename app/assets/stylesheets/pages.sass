@@ -1,0 +1,98 @@
+html.responsive
+
+  .round-one
+    min-height: 700px
+    color: white
+    +media($small)
+      min-height: 600px
+
+  .round-two
+    min-height: 500px
+
+  .round-one, .round-two
+    color: white
+    h2
+      margin: 0
+      float: none
+      display: block
+      font-family: $league
+      color: white
+      font-size: 30px
+      text-shadow: 1px 1px 2px $darkblue
+      @extend %smooth
+      +media($small)
+        font-size: 40px
+        text-shadow: 2px 2px 5px $darkblue
+
+    h3
+      font-size: 20px
+      color: white
+
+    #backing
+      margin-top: 60px
+      hgroup
+        margin-bottom: 20px
+        p
+          font-size: 16px
+          margin: 15px 0 0
+          line-height: 1.2
+      +media($small)
+        hgroup
+          max-width: 380px
+
+
+    #reserve_container
+      margin-top: 0
+      text-align: left
+
+  .google-form
+    padding: 10px 0
+    form
+      margin: 0
+    input
+      border-radius: 3px
+      border: 3px solid white
+      background-color: $lightgrey
+      padding: 6px 5px
+      margin: 0 10px 0 0
+      float: left
+      font-size: 18px
+      outline: none
+      @extend %box-shadow
+      width: 83%
+      +media($small)
+        width: 330px
+    button
+      background-image: none
+      border: none
+      +button($red)
+      padding: 0
+      outline: none
+      +size(40px)
+      line-height: 40px
+      font-size: 20px
+      float: right
+      +media($small)
+        float: none
+    a
+      color: white
+      text-decoration: none
+      &:hover
+        color: $darkblue
+
+  .round-two-form
+    width: 100%
+    background-color: white
+    +media($medium)
+      & > div
+        position: relative
+        width: 80%
+        margin: 0 auto
+        overflow-y: hidden
+        &:after
+          content: ""
+          +inline-block
+          +size(20px 9999px)
+          background-color: white
+          +position(absolute, 0px 0px 0 0)
+

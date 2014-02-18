@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'json', '~> 1.7.7'
+gem 'high_voltage', '~> 2.1.0'
 gem 'font-awesome-rails'
 
 group :development do
