@@ -1,3 +1,6 @@
+@import "font-awesome";
+@import "bourbon";
+@import "neat";
 @import "variables";
 @import "primitives";
 @import "header";
@@ -6,3 +9,15 @@
 @import "homepage";
 @import "share";
 @import "checkout";
+
+// The import below overrides most of the styles using the
+// html.responsive I did this so that I could make the site
+// responsive while not altering the original framework.
+// Later, this should make it easier to pull in changes from
+// the original repo.
+
+// If any significant style changes are to be made this should
+// be scrapped and the orginal styles should be altered.
+@import "settings";
+@import "responsive";
+@import "pages";

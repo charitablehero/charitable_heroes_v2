@@ -1,4 +1,52 @@
 <div class="wrapper clearfix">
+  <% backers = 10 %>
+  <% percent = (backers * 29.95 / Order.goal) * 100 %>
+  <div id="backing">
+    <ul>
+      <li class="stats" id="backers">
+        <%= number_with_delimiter backers, :delimiter => "," %>
+        <span><%= Settings.primary_stat %></span>
+      </li>
+      <li class="stats">
+        <%= number_to_currency backers*29.95, :precision => 0 %>
+        <span>of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %></span>
+      </li>
+      <% if Settings.expiration_date.present? %>
+        <li class="stats" id="days">
+          <%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\D/, "") %>
+          <span><%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\d/, "").gsub("about", "") %> left</span>
+        </li>
+      <% else %>
+        <li class="stats" id="days">
+            &infin;
+            <span>days left</span>
+          </li>
+      <% end %>
+    </ul>
+    <% if percent < 100 %>
+      <div id='progress_bg' class='small'>
+        <div id='progress' class='' style='width: <%= percent %>%;'>
+        </div>
+      </div>
+    <% else %>
+      <div id="progress_bg">
+        <div id="progress">
+        </div>
+        <div id='progress_text'><%= percent.round(0) %>% <%= Settings.progress_text %></div>
+      </div>
+    <% end %>
+
+    <div id="reserve_container">
+      <div class="disclaimer">
+        <p><small>Progress is updated daily but might not yet reflect the current status</small></p>
+      </div>
+      <p id="ship_date"><%= Settings.ships %></p>
+      <a href="/preorder/checkout" class="red_button reserve"><%= Settings.call_to_action %></a>
+      <p id="price"><%= Settings.price_human %></p>
+      <p><%= Settings.dont_give_them_a_reason_to_say_no %></p>
+    </div>
+
+  </div>
   <!-- <div id="video">
     <% if Settings.use_video_placeholder %>
       <div id="video_image">
@@ -15,7 +63,7 @@
     <% else %>
       <iframe width='512' height='385' src="<%= video_url %>"></iframe>
     <% end %>
-  </div> -->
+  </div>
 
   <div id="backing">
     <ul>
@@ -40,7 +88,7 @@
           </li>
       <% end %>
     </ul>
-    
+
     <% if Order.revenue.to_f < Order.goal.to_f %>
       <div id='progress_bg' class='small'>
         <div id='progress' class='' style='width: <%= Order.percent %>%;'>
@@ -53,7 +101,7 @@
         <div id='progress_text'><%= Order.percent %>% <%= Settings.progress_text %></div>
       </div>
     <% end %>
-    
+
     <div id="reserve_container">
       <p id="ship_date"><%= Settings.ships %></p>
       <a href="/preorder/checkout" class="red_button reserve"><%= Settings.call_to_action %></a>
@@ -66,7 +114,7 @@
       </div>
 
     </div>
-    
-  </div>
-  
+
+  </div> -->
+
 </div>

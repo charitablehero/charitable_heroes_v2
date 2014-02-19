@@ -4,7 +4,7 @@ Rails app for Charitable Heroes
 
 ## Getting Started
 
-*Note: This assumes you have Ruby 1.9.2 or later installed properly and have a basic working knowledge of how to use RubyGems*
+*Note: This assumes you have Ruby 2.0.0 or later installed properly and have a basic working knowledge of how to use RubyGems*
 
 First you'll need to fork and clone this repo
 
