@@ -1,6 +1,6 @@
 <div class="wrapper clearfix">
-  <% backers = 0 %>
-  <% percent = (backers * 19.95 / Order.goal) * 100 %>
+  <% backers = 10 %>
+  <% percent = (backers * 29.95 / Order.goal) * 100 %>
   <div id="backing">
     <ul>
       <li class="stats" id="backers">
@@ -8,7 +8,7 @@
         <span><%= Settings.primary_stat %></span>
       </li>
       <li class="stats">
-        <%= number_to_currency backers*19.95, :precision => 0 %>
+        <%= number_to_currency backers*29.95, :precision => 0 %>
         <span>of <%= number_to_currency Settings.project_goal.to_f, :precision => 0 %></span>
       </li>
       <% if Settings.expiration_date.present? %>
