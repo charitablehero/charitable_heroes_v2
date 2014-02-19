@@ -6,6 +6,7 @@ gem 'rails', '4.0.0'
 gem 'json', '~> 1.7.7'
 gem 'high_voltage', '~> 2.1.0'
 gem 'font-awesome-rails'
+gem 'rails_12factor'
 
 group :development do
   gem 'sqlite3'
