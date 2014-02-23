@@ -6,6 +6,7 @@ gem 'rails', '4.0.0'
 gem 'json', '~> 1.7.7'
 gem 'high_voltage', '~> 2.1.0'
 gem 'font-awesome-rails'
+gem 'rails_12factor'
 
 group :development do
   gem 'sqlite3'
@@ -19,13 +20,11 @@ end
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 4.0.0'
-  gem 'coffee-rails', '~> 4.0.0'
-  gem 'uglifier', '>= 1.0.3'
-  gem 'bourbon'
-  gem 'neat'
-end
+gem 'sass-rails',   '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.0.3'
+gem 'bourbon'
+gem 'neat'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
