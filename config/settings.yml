@@ -74,7 +74,7 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "Pay $30 today, Pitch us your cause, Win and direct where $300 is donated each year for life!"
+ships: "Pay $30 today. Pitch us your cause. Win and Charitlabe Heroes, L3C will donate $300 to a cause of your choice every year for life!"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Become a Hero!"
@@ -82,7 +82,7 @@ call_to_action: "Become a Hero!"
 price_human: ""
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
-dont_give_them_a_reason_to_say_no: "This competition is a one-time opportunity, don't miss out!"
+dont_give_them_a_reason_to_say_no:
 
 # Social Stuff
 facebook_app_id: "1234567890"
