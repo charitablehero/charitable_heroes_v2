@@ -1,11 +1,11 @@
 <div class="wrapper clearfix">
-  <% backers = 0 %>
+  <% backers = 1 %>
   <% end_date = Date.parse("30/4/2014") %>
   <% percent = (backers * 29.95 / Order.goal) * 100 %>
   <div id="backing">
     <ul>
       <li class="stats" id="backers">
-        <%= number_with_delimiter backers, :delimiter => "1" %>
+        <%= number_with_delimiter backers, :delimiter => "," %>
         <span><%= Settings.primary_stat %></span>
       </li>
       <li class="stats">
