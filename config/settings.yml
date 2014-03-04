@@ -39,8 +39,8 @@ use_video_placeholder: true
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
-amazon_access_key: "AKIAJPROU4YBMGLEHETA"
-amazon_secret_key: "QFXBnShfijGOoTXXEFz2m3K1R1HpwRsWoiN3JI2f"
+amazon_access_key: 
+amazon_secret_key: 
 price: 	29.95
 
 # if use_payment_options is set to true, then a set of radio buttons will be displayed with various payment options.
@@ -74,7 +74,7 @@ progress_text: "Implemented"
 # Call to action section
 
 # On Lockitron, it's "First Batch Ships in March 2013"
-ships: "$29.95 to Enter"
+ships: "Pay $30 today. Pitch us your cause. Win and Charitlabe Heroes, L3C will donate $300 to a cause of your choice every year for life!"
 
 # On Lockitron, it's "Reserve Now"
 call_to_action: "Become a Hero!"
@@ -82,7 +82,7 @@ call_to_action: "Become a Hero!"
 price_human: ""
 
 # The paragraph below the price. You'd probably say something about how you're not going to charge them before it ships (so it's less risky).
-dont_give_them_a_reason_to_say_no: "The World's only competition to award life-long Charitable Superpowers!"
+dont_give_them_a_reason_to_say_no:
 
 # Social Stuff
 facebook_app_id: "1234567890"
@@ -91,7 +91,7 @@ facebook_app_id: "1234567890"
 tweet_text: "to crowdfund"
 
 # Google Analytics
-google_id: "1234567890"
+google_id: "UA-37895951-1"
 
 # If you want to change the images for the key points (e.g. "Kickstarter is not a store")
 # They're in app/assets/images/#{pointer_number}-background.png
